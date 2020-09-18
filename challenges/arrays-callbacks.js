@@ -40,7 +40,7 @@ const lowCaseAnimalNames = zooAnimals.map (function (item) {
   return item.animal_name.toLowerCase()
 })
 
-// console.log(lowCaseAnimalNames);
+console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
 
@@ -52,7 +52,7 @@ const lowPopulationAnimals = zooAnimals.filter (function (item) {
   return item.population < 5
 })
 
-// console.log(lowPopulationAnimals);
+console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
@@ -63,7 +63,7 @@ let populationTotal = zooAnimals.reduce (function (acc, item) {
   return acc += item.population
 }, 0)
 
-// console.log(populationTotal);
+console.log(populationTotal);
 
 
 // ==== Callbacks ====  
@@ -83,7 +83,7 @@ function consume (a , b, cb) {
   return cb (a, b)
 }
 
-// console.log(consume(5,4,cb))
+console.log(consume(5,4,cb))
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -104,9 +104,9 @@ function greeting (firstName, lastName) {
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
@@ -115,4 +115,5 @@ function greeting (firstName, lastName) {
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+
 
